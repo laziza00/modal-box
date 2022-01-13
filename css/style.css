@@ -22,18 +22,7 @@ body {
   padding: 20px 0;
 }
 
-.modalbox{
-  background-color: rgba(82, 79, 79, 0.692);
-  width: 100vW;
-  height: 100vh;
-  position: fixed;
-  /* display: none; */
-  transition: all 0.5s ease;
-  opacity: 0;
-  
 
-  
-}
 .modalopen{
   position: fixed;
   top: 25%;
@@ -53,8 +42,19 @@ body {
   margin: 0 auto;
 
 }
+.modalbox{
+  background-color: rgba(82, 79, 79, 0.692);
+  width: 100vW;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: none;
+  transition: all 0.5s ease;
+  opacity: 0;
+    
+}
 .show{
-  /* display: block; */
+  display: block;
   opacity: 1;
   transform: translateY(100px);
 }
