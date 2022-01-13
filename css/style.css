@@ -13,3 +13,61 @@ body {
   flex-direction: column;
 }
 
+.container{
+  width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.row{
+  padding: 20px 0;
+}
+
+.modalbox{
+  background-color: rgba(104, 100, 100, 0.692);
+  width: 100vW;
+  height: 100vh;
+  position: fixed;
+  display: none;
+
+  
+}
+.modalopen{
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid blue;
+  background-color: rgb(45, 206, 218);
+  color: #fff;
+  font-size: 25px;
+
+}
+.show{
+  display: block;
+}
+.modalbtn{
+  margin: 20px;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.modalclose{
+  position: relative;
+  top: 0;
+  right: 15px;
+  transform: translate();
+  width: 20px;
+  background-color: blue;
+  color: #fff;
+  padding: 0px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
