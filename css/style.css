@@ -35,28 +35,25 @@ body {
   background-color: rgb(146, 228, 91);
   color: #fff;
   font-size: 25px;
-  text-align: center;
   display: flex;
   font-weight: bold;
   align-items: center;
-  margin: 0 auto;
-
 }
 .modalbox{
   background-color: rgba(82, 79, 79, 0.692);
   width: 100vW;
   height: 100vh;
   position: fixed;
-  top: 0;
   display: none;
+  cursor: pointer;
   transition: all 0.5s ease;
-  opacity: 0;
+  /* opacity: 0; */
     
 }
 .show{
   display: block;
-  opacity: 1;
-  transform: translateY(100px);
+  /* opacity: 1;
+  transform: translateY(100px); */
 }
 .modalbtn{
   margin: 20px;
@@ -65,7 +62,7 @@ body {
   border-radius: 5px;
   border: 1px solid rgb(8, 66, 6);
   padding: 15px;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .modalclose{
