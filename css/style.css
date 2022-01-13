@@ -14,7 +14,7 @@ body {
 }
 
 .container{
-  width: 1100px;
+  width: 1100px; 
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -23,11 +23,14 @@ body {
 }
 
 .modalbox{
-  background-color: rgba(104, 100, 100, 0.692);
+  background-color: rgba(82, 79, 79, 0.692);
   width: 100vW;
   height: 100vh;
   position: fixed;
-  display: none;
+  /* display: none; */
+  transition: all 0.5s ease;
+  opacity: 0;
+  
 
   
 }
@@ -37,37 +40,49 @@ body {
   left: 25%;
   width: 500px;
   height: 300px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  border: 1px solid blue;
-  background-color: rgb(45, 206, 218);
+  border: 1px solid rgb(3, 75, 15);
+  background-color: rgb(146, 228, 91);
   color: #fff;
   font-size: 25px;
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  margin: 0 auto;
 
 }
 .show{
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transform: translateY(100px);
 }
 .modalbtn{
   margin: 20px;
   background-color: green;
   color: #fff;
   border-radius: 5px;
-  border: 1px solid #000;
+  border: 1px solid rgb(8, 66, 6);
   padding: 15px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .modalclose{
-  position: relative;
-  top: 0;
-  right: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   transform: translate();
-  width: 20px;
-  background-color: blue;
+  background-color: rgb(15, 49, 7);
   color: #fff;
-  padding: 0px;
+  display: block;
+  padding: 10px;
+  width: 30px;
+  font-weight: bold;
+  font-size: 15px;
   border-radius: 3px;
-  border: 1px solid #000;
+  border: 1px solid rgb(13, 87, 23);
   cursor: pointer;
 }
+
+
